@@ -1,5 +1,5 @@
 ---
-tags: customize iterm2 macbook homebrew brew zsh fonts commandline color
+tags: customize howto iterm2 macbook homebrew brew zsh fonts commandline color
 when: 2022-01-14
 status: draft
 ---
