@@ -1,0 +1,86 @@
+# navigation
+alias ls='lsd'
+alias lr='ls -lth'
+alias la='ls -Althr'
+alias ..='cd ..'
+alias .2='cd ../../'
+alias .3='cd ../../../'
+alias .4='cd ../../../../'
+alias ~='cd ~'
+alias -- -="cd -"
+# navigating this machine
+alias dt="cd ~/Desktop"
+alias dl="cd ~/Documents"
+alias dv="cd ~/Dev"
+alias gdrive="cd ~/Google\ Drive"
+alias vw="cd ~/vimwiki"
+alias para="cd /Volumes/ddrive"
+alias p="cd /Volumes/ddrive"
+alias dot="cd ~/MyGits/dots"
+
+# navigating to server
+alias hpc3='ssh -Y hpc3' 
+alias hpc4='ssh -Y hpc4' 
+alias toWS='ssh -Y WS'
+
+# navigate to one drive
+alias myod='cd "/Users/rp/OneDrive - Trailhead Biosystems/"'
+alias thod='cd "/Users/rp/Trailhead Biosystems/Trailhead Biosystems Team Site - Documents/"'
+
+
+# remove
+alias rm='rm -i'
+alias rm='trash'
+alias c="clear"
+
+# Programming Env
+# anaconda
+alias aconda="source /opt/anaconda3/bin/activate && cenvlist"
+alias dconda="conda deactivate"
+alias cactivate="conda activate $1"
+alias runj="jupyter lab --no-browser --ip 192.168.0.79 "
+# iPython vi mode
+alias ipython='ipython --TerminalInteractiveShell.editing_mode=vi'
+
+
+# Softwares 
+# Typora
+alias typora="open -a typora"
+
+# neovim
+alias vim='nvim'
+
+# vscode
+# alias code='code-insiders'
+
+# monitoring
+alias htopr='htop -u $USER'
+
+
+# R env
+alias Rns='R --no-save --no-restore'
+
+
+# Template
+# obsidian template notes
+alias RP="python3 ~/bin/obsedian_template.py"
+# Notes
+alias note="touch `echo note_$(date '+%Y%m%d%H%M%S').md` && $EDITOR note_$(date '+%Y%m%d%H%M%S').md"
+
+
+# alias date
+alias dtime="echo $(date '+%Y%m%d%H%M%S')"
+alias dtime_sep="echo $(date '+%Y%m%d-%H:%M:%S')"
+
+
+# brew related
+alias buou="brew update && brew outdated && brew upgrade && brew cleanup"
+
+# pinging google
+alias pingoo="gping www.google.com"
+
+
+
+
+
+
