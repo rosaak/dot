@@ -1,6 +1,6 @@
 # navigation
 alias ls='lsd'
-alias lr='ls -lth'
+alias lr='exa -l'
 alias la='ls -Althr'
 alias ..='cd ..'
 alias .2='cd ../../'
@@ -8,15 +8,20 @@ alias .3='cd ../../../'
 alias .4='cd ../../../../'
 alias ~='cd ~'
 alias -- -="cd -"
+
 # navigating this machine
 alias dt="cd ~/Desktop"
-alias dl="cd ~/Documents"
+alias do="cd ~/Documents"
+alias dl="cd ~/Downloads"
 alias dv="cd ~/Dev"
+
 alias gdrive="cd ~/Google\ Drive"
 alias vw="cd ~/vimwiki"
-alias para="cd /Volumes/ddrive"
-alias p="cd /Volumes/ddrive"
+alias para="cd ~/PARA"
 alias dot="cd ~/MyGits/dots"
+alias not="cd ~/MyNotes"
+# alias gdr="cd /Volumes/ddrive"
+
 
 # navigating to server
 alias hpc3='ssh -Y hpc3' 
@@ -35,7 +40,8 @@ alias c="clear"
 
 # Programming Env
 # anaconda
-alias aconda="source /opt/anaconda3/bin/activate && cenvlist"
+
+alias aconda="source ~/opt/miniconda3/bin/activate && cenvlist"
 alias dconda="conda deactivate"
 alias cactivate="conda activate $1"
 alias runj="jupyter lab --no-browser --ip 192.168.0.79 "
@@ -49,9 +55,11 @@ alias typora="open -a typora"
 
 # neovim
 alias vim='nvim'
+alias nv='nvim'
+
 
 # vscode
-# alias code='code-insiders'
+alias code='code-insiders'
 
 # monitoring
 alias htopr='htop -u $USER'
@@ -65,7 +73,7 @@ alias Rns='R --no-save --no-restore'
 # obsidian template notes
 alias RP="python3 ~/bin/obsedian_template.py"
 # Notes
-alias note="touch `echo note_$(date '+%Y%m%d%H%M%S').md` && $EDITOR note_$(date '+%Y%m%d%H%M%S').md"
+# alias note="touch `echo note_$(date '+%Y%m%d%H%M%S').md` && $EDITOR note_$(date '+%Y%m%d%H%M%S').md"
 
 
 # alias date

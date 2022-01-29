@@ -53,6 +53,26 @@ function transfer(){ if [ $# -eq 0 ];then echo "No arguments specified.\nUsage:\
 # Make notes with toml 
 # -------------------------------------------------------------------------
 
+function note(){
+n=`echo note_${1}_$(date '+%Y%m%d%H%M%S').md`
+touch $n
+cat << EOF >$n
+---
+date: $(date '+%Y%m%d')
+tags: 
+---
+
+
+# ${1}
+
+
+
+EOF
+
+$EDITOR $n
+}
+
+
 function gnote(){
 dt=`echo $(date '+%Y%m%d%H%M%S')` 
 nn=`echo note_$dt.md`
@@ -62,9 +82,9 @@ touch $fn
 # write some toml 
 cat << EOF > $fn
 ---
-title : <<++>>
-date : $dt
-tags : 
+title: <<++>>
+date: $dt
+tags: 
 ---
 
 ### Notes :
