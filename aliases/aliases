@@ -11,7 +11,7 @@ alias -- -="cd -"
 
 # navigating this machine
 alias dt="cd ~/Desktop"
-alias do="cd ~/Documents"
+alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dv="cd ~/Dev"
 
@@ -59,7 +59,7 @@ alias nv='nvim'
 
 
 # vscode
-alias code='code-insiders'
+# alias code='code-insiders'
 
 # monitoring
 alias htopr='htop -u $USER'

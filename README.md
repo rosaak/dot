@@ -10,70 +10,35 @@ status: draft
 ## Installation and Customization 
 #### Package Management and Shells
 - [ ] Homebrew
-- [ ] ZSH
-  - [ ] Oh My ZSH
-  - [ ] Alises
+- [x] ZSH
+  - [x] Oh My ZSH
+  - [x] Powerlevel10k
+  - [x] Alises
 
 #### Setting up Git
 
 
 #### Terminal Emulators
-- [ ] iTerm2
-- [ ] Tabby
+- [x] iTerm2
+- [x] Tabby
 - [ ] Fonts
 - [ ] Color Schema
 
 #### Programing envs
 - [x] nodejs
-- [ ] anaconda
-- [ ] minforge
+- [x] anaconda
+- [x] minforge
 - [x] R
 - [ ] Python
 
 #### IDEs
-- [ ] neovim 
-- [ ] vscode
-- [ ] rstudio
+- [x] neovim 
+- [x] vscode
+- [x] rstudio
 
 #### Cloud
   - [ ] Install AWS Cli
-  - [ ] Install Azure 
-
-
-## Installing Homebrew
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)
-```
-
-### Some necessary packages to install  via brew
-```
-brew install wget
-brew install starship
-brew install ripgrep
-brew install bat
-brew install tokei
-brew install exa
-brew install fd 
-brew install fzf
-brew install procs
-brew install php
-brew install autojump
-brew install zsh-syntax-highlighting
-
-brew install trash
-
-brew install pipes-sh
-brew install cmatrix
-brew install figlet
-
-# for starship
-brew tap homebrew/cask-fonts
-brew install --cask font-hack-nerd-font
-brew install --cask font-fira-code-nerd-font
-
-brew install iterm2
-brew install tmux
-```
+  - [x] Install Azure 
 
 
 ---
