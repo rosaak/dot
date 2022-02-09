@@ -16,7 +16,7 @@ alias dl="cd ~/Downloads"
 alias dv="cd ~/Dev"
 
 alias gdrive="cd ~/Google\ Drive"
-alias vw="cd ~/vimwiki"
+#alias vw="cd ~/vimwiki"
 alias para="cd ~/PARA"
 alias dot="cd ~/MyGits/dots"
 alias not="cd ~/MyNotes"
@@ -44,7 +44,7 @@ alias c="clear"
 alias aconda="source ~/opt/miniconda3/bin/activate && cenvlist"
 alias dconda="conda deactivate"
 alias cactivate="conda activate $1"
-alias runj="jupyter lab --no-browser --ip 192.168.0.79 "
+alias runj="jupyter lab --no-browser "
 # iPython vi mode
 alias ipython='ipython --TerminalInteractiveShell.editing_mode=vi'
 
