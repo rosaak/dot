@@ -13,7 +13,7 @@ alias -- -="cd -"
 alias dt="cd ~/Desktop"
 alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
-alias dv="cd ~/PARA/Dev"
+alias dv="cd ~/PARA/projects/dev"
 
 alias gdrive="cd ~/Google\ Drive"
 #alias vw="cd ~/vimwiki"
