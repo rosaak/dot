@@ -15,6 +15,13 @@ sha R-4.1.2-arm64.pkg
 pkgutil --check-signature R-4.1.2-arm64.pkg
 ```
 
+```
+wget -O R-4.1.2.pkg https://cran.r-project.org/bin/macosx/base/R-4.1.2.pkg
+sha R-4.1.2.pkg
+pkgutil --check-signature R-4.1.2.pkg
+```
+
+
 - Installing arm version 
 ```
 open R-4.1.2-arm64.pkg

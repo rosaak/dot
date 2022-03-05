@@ -28,7 +28,7 @@ COMPLETION_WAITING_DOTS="true"          # show red dot while waiting
 # DISABLE_UNTRACKED_FILES_DIRTY="true"  # for a faster status check for large repos
 # HIST_STAMPS="mm/dd/yyyy"              # history stamp 
 # ZSH_CUSTOM=/path/to/new-custom-folder # use another custom folder than $ZSH/custom?
-plugins=(git extract macos python tmux docker rsync vscode urltools bgnotify z iterm2 emoji autojump brew)     # plugins 
+plugins=(git extract macos python tmux docker rsync vscode urltools bgnotify z iterm2 emoji autojump brew fzf)     # plugins 
 
 
 # PREFERED EDITOR
@@ -50,11 +50,11 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 source ~/.aliases
 source $ZSH/oh-my-zsh.sh
 source ~/bin/imp_fns.sh
-
+# source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
 
 # WEATHER
 # -------------------------------------------------------------------------
-curl -sH "Accept-Language: ${LANG%_*}" wttr.in/@cwru.edu | head -n 7
+# curl -sH "Accept-Language: ${LANG%_*}" wttr.in/@cwru.edu | head -n 7
 
 # STARSHIP PROMPT
 # -------------------------------------------------------------------------
@@ -80,10 +80,8 @@ export MCFLY_INTERFACE_VIEW=BOTTOM
 export MCFLY_RESULTS_SORT=LAST_RUN
 
 
-
-
-
-
-
+# NPM global
+#----------------------------------
+export PATH=/Users/rp/.config/npm-global/bin:/Users/rp/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 

@@ -13,13 +13,13 @@ alias -- -="cd -"
 alias dt="cd ~/Desktop"
 alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
-alias dv="cd ~/Dev"
+alias dv="cd ~/PARA/Dev"
 
 alias gdrive="cd ~/Google\ Drive"
 #alias vw="cd ~/vimwiki"
 alias para="cd ~/PARA"
 alias dot="cd ~/MyGits/dots"
-alias not="cd ~/MyNotes"
+alias not="cd ~/MyNotes/thVault/slipbox"
 # alias gdr="cd /Volumes/ddrive"
 
 
@@ -31,7 +31,7 @@ alias toWS='ssh -Y WS'
 # navigate to one drive
 alias myod='cd "/Users/rp/OneDrive - Trailhead Biosystems/"'
 alias thod='cd "/Users/rp/Trailhead Biosystems/Trailhead Biosystems Team Site - Documents/"'
-
+alias thodrp='cd "/Users/rp/Trailhead Biosystems/Trailhead Biosystems Team Site - Documents/TB-Team/Roshan"'
 
 # remove
 alias rm='rm -i'
@@ -41,7 +41,7 @@ alias c="clear"
 # Programming Env
 # anaconda
 
-alias aconda="source ~/opt/miniconda3/bin/activate && cenvlist"
+alias aconda="source ~/opt/miniforge3/bin/activate && cenvlist"
 alias dconda="conda deactivate"
 alias cactivate="conda activate $1"
 alias runj="jupyter lab --no-browser "
@@ -87,6 +87,8 @@ alias buou="brew update && brew outdated && brew upgrade && brew cleanup"
 # pinging google
 alias pingoo="gping www.google.com"
 
+# THB
+alias thb="cd /Users/rp/Trailhead\ Biosystems/Trailhead\ Biosystems\ Team\ Site\ \-\ Documents"
 
 
 

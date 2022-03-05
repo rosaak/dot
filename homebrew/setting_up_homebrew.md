@@ -7,6 +7,12 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)
 ```
 
+- after intalling hombrew run these two commands
+- Run these two commands in your terminal to add Homebrew to your PATH:
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/rp/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
 - install a bunch of utility programs that I use reqularly 
 
 ```

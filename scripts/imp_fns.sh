@@ -58,8 +58,10 @@ n=`echo note_${1}_$(date '+%Y%m%d%H%M%S').md`
 touch $n
 cat << EOF >$n
 ---
+
 date: $(date '+%Y%m%d')
 tags: 
+
 ---
 
 
@@ -82,9 +84,11 @@ touch $fn
 # write some toml 
 cat << EOF > $fn
 ---
+
 title: <<++>>
 date: $dt
 tags: 
+
 ---
 
 ### Notes :
@@ -113,7 +117,11 @@ fpath+=~/.zfunc
 
 
 
+# START miniforge
 
+functuion start_minforge(){
+  source ~/opt/miniforge3/bin/activate
+}
 
 
 
