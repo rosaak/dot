@@ -20,6 +20,7 @@ alias gdrive="cd ~/Google\ Drive"
 alias para="cd ~/PARA"
 alias dot="cd ~/MyGits/dots"
 alias not="cd ~/MyNotes/thVault/slipbox"
+alias sbox="cd /Users/rp/PARA/projects/dev/SandBox"
 # alias gdr="cd /Volumes/ddrive"
 
 
@@ -33,8 +34,12 @@ alias myod='cd "/Users/rp/OneDrive - Trailhead Biosystems/"'
 alias thod='cd "/Users/rp/Trailhead Biosystems/Trailhead Biosystems Team Site - Documents/"'
 alias thodrp='cd "/Users/rp/Trailhead Biosystems/Trailhead Biosystems Team Site - Documents/TB-Team/Roshan"'
 
-# remove
+# shouldn't overwrite
+alias cp="cp -i"
+alias mv="mv -i"
 alias rm='rm -i'
+
+# remove
 alias rm='trash'
 alias c="clear"
 
