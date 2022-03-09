@@ -62,6 +62,8 @@ alias typora="open -a typora"
 alias vim='nvim'
 alias nv='nvim'
 
+# doom emacs on terminal
+alias em="emacs -nw"
 
 # vscode
 # alias code='code-insiders'
