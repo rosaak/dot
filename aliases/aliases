@@ -92,7 +92,7 @@ alias dtime_sep="echo $(date '+%Y%m%d-%H:%M:%S')"
 alias buou="brew update && brew outdated && brew upgrade && brew cleanup"
 
 # pinging google
-alias pingoo="gping www.google.com"
+alias pingoo="ping www.google.com"
 
 # THB
 alias thb="cd /Users/rp/Trailhead\ Biosystems/Trailhead\ Biosystems\ Team\ Site\ \-\ Documents"
