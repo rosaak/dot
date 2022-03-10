@@ -40,7 +40,7 @@ alias mv="mv -i"
 alias rm='rm -i'
 
 # remove
-alias rm='trash'
+# alias rm='trash'
 alias c="clear"
 
 # Programming Env
