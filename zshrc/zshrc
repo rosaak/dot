@@ -12,6 +12,11 @@ export EDITOR='nvim'                                    # editor
 set -o vi
 
 
+# HISTORY
+HISTCONTROL=ignoreboth
+HISTTIMEFORMAT="%Y-%m-%d %T "
+#shopt -s histappend
+
 # OH-MY-ZSH Related
 # -------------------------------------------------------------------------
 # ZSH_THEME="robbyrussell"
