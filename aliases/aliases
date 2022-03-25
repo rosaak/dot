@@ -31,8 +31,10 @@ alias toWS='ssh -Y WS'
 
 # navigate to one drive
 alias myod='cd "/Users/rp/OneDrive - Trailhead Biosystems/"'
-alias thod='cd "/Users/rp/Trailhead Biosystems/Trailhead Biosystems Team Site - Documents/"'
-alias thodrp='cd "/Users/rp/Trailhead Biosystems/Trailhead Biosystems Team Site - Documents/TB-Team/Roshan"'
+alias thb='cd "/Users/rp/Trailhead Biosystems/Trailhead Biosystems Team Site - Documents/"'
+alias thrp='cd "/Users/rp/Trailhead Biosystems/Trailhead Biosystems Team Site - Documents/TB-Team/Roshan"'
+alias thbi='cd "/Users/rp/Trailhead Biosystems/Trailhead Biosystems Team Site - Documents/Bioinformatics_Related"'
+alias thrna='cd "/Users/rp/Trailhead Biosystems/Trailhead Biosystems Team Site - Documents/RNA Sequencing"'
 
 # shouldn't overwrite
 alias cp="cp -i"
@@ -94,8 +96,6 @@ alias buou="brew update && brew outdated && brew upgrade && brew cleanup"
 # pinging google
 alias pingoo="ping www.google.com"
 
-# THB
-alias thb="cd /Users/rp/Trailhead\ Biosystems/Trailhead\ Biosystems\ Team\ Site\ \-\ Documents"
 
 
 
