@@ -1,7 +1,9 @@
 
 # weather
 # -------------------------------------------------------------------------
-function weather () {curl wttr.in/Cleveland}
+function weather(){
+	curl wttr.in/Cleveland
+}
 
 
 
