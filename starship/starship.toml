@@ -1,0 +1,142 @@
+# 
+#  ____ _____ ____  ____  ____  _     _  ____ 
+# / ___Y__ __Y  _ \/  __\/ ___\/ \ /|/ \/  __\
+# |    \ / \ | / \||  \/||    \| |_||| ||  \/|
+# \___ | | | | |-|||    /\___ || | ||| ||  __/
+# \____/ \_/ \_/ \|\_/\_\\____/\_/ \|\_/\_/   
+#                                            
+# RP 2022.03.25
+#
+
+format = "$all"
+scan_timeout = 10
+add_newline = false
+
+[battery]
+full_symbol = "🔋 "
+charging_symbol = "⚡️ "
+discharging_symbol = "💀 "
+
+[[battery.display]]
+threshold = 10
+style = "bold red"
+
+[hostname]
+ssh_only = false
+format = "<[$hostname 's macbook pro]($style)>"
+trim_at = "s-MacBook-Pro.local"
+style = "bold dimmed white"
+disabled = false
+
+[memory_usage]
+format = "$symbol[${ram}( | ${swap})]($style) "
+threshold = 70
+style = "bold dimmed green"
+disabled = true
+symbol = " "
+
+
+[character]
+error_symbol = "[✖](bold red) "
+
+[username]
+style_user = "bold dimmed blue"
+show_always = false
+
+[cmd_duration]
+min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
+format = " took [$duration]($style)"
+
+[directory]
+truncation_length = 5
+format = "[$path]($style)[$lock_symbol]($lock_style) "
+
+[sudo]
+style = "bold green"
+symbol = "👩‍💻 "
+disabled = false
+
+[status]
+style = "bg:blue"
+symbol = "🔴 "
+success_symbol = "🟢 SUCCESS"
+format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style) '
+map_symbol = true
+disabled = false
+
+[time]
+disabled = false
+format = '🕙 $time($style) '
+time_format = "%T"
+style = "bright-white"
+
+[azure]
+disabled = true
+format = "on [$symbol($subscription)]($style) "
+symbol = "ﴃ "
+style = "blue bold"
+
+[conda]
+format = "[$symbol$environment](dimmed green) "
+symbol = "⬢"
+
+[python]
+format = "[$symbol$version]($style) "
+style = "bold green"
+
+[julia]
+format = "[$symbol$version]($style) "
+symbol = "ஃ "
+style = "bold green"
+
+[rlang]
+format = "with [📐 $version](blue bold) "
+
+
+[golang]
+format = "via [🏎💨 $version](bold cyan) "
+
+[java]
+symbol = "🌟 "
+
+[kotlin]
+symbol = "🅺 "
+kotlin_binary = "kotlinc"
+
+[lua]
+format = "via [🌕 $version](bold blue) "
+
+[docker_context]
+format = "via [🐋 $context](blue bold)"
+
+[container]
+format = "[$symbol \\[$name\\]]($style) "
+
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count}"
+behind = "🐢 ×${count}"
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
+untracked = "🛤️  ×${count}"
+stashed = "📦 "
+modified = "📝 ×${count}"
+staged = "🗃️  ×${count}"
+renamed = "📛 ×${count}"
+deleted = "🗑️  ×${count}"
+style = "bright-white"
+format = "$all_status$ahead_behind"
+
+[git_branch]
+format = " [$symbol$branch]($style) "
+symbol = "🍣 "
+style = "bold yellow"
+
+[git_commit]
+commit_hash_length = 8
+style = "bold white"
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+
+
