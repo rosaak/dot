@@ -119,20 +119,12 @@ function fpv(){
 }
 
 
-# AUTO LOAD ZSH 
-# -------------------------------------------------------------------------
-autoload -Uz compinit
-zstyle ':completion:*' menu select
-fpath+=~/.zfunc
-
-
 
 # START miniforge
 
-functuion start_minforge(){
-  source ~/opt/miniforge3/bin/activate
+function start_minforge(){
+  source /Users/rp/opt/miniforge3/bin/activate
 }
-
 
 
 
