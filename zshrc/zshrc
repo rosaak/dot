@@ -11,12 +11,6 @@ export EDITOR='nvim'                                    # editor
 # Vi mode on
 set -o vi
 
-
-# HISTORY
-HISTCONTROL=ignoreboth
-HISTTIMEFORMAT="%Y-%m-%d %T "
-#shopt -s histappend
-
 # OH-MY-ZSH Related
 # -------------------------------------------------------------------------
 # ZSH_THEME="robbyrussell"
@@ -66,9 +60,9 @@ source ~/bin/imp_fns.sh
 
 # STARSHIP PROMPT
 # -------------------------------------------------------------------------
-# echo 'eval "$(starship init zsh)"' >> ~/.zshrc
-# eval "$(starship init zsh)"
-
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+export STARSHIP_CACHE=~/.config/starship/cache
 
 # AUTOJUMP
 # -------------------------------------------------------------------------
