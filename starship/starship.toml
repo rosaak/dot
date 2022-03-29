@@ -23,10 +23,11 @@ style = "bold red"
 
 [hostname]
 ssh_only = false
-format = "<[$hostname 's macbook pro]($style)>"
+#format = "<[$hostname 's macbook pro]($style)>"
+format = "<[RP]($style)>"
 trim_at = "s-MacBook-Pro.local"
 style = "bold dimmed white"
-disabled = false
+disabled = true
 
 [memory_usage]
 format = "$symbol[${ram}( | ${swap})]($style) "
