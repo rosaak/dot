@@ -52,6 +52,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 source ~/.aliases
 source $ZSH/oh-my-zsh.sh
 source ~/bin/imp_fns.sh
+source ~/bin/sftp_azure.sh
 # source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
 
 # WEATHER
