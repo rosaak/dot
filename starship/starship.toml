@@ -63,7 +63,7 @@ symbol = "🔴 "
 success_symbol = "🟢 SUCCESS"
 format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style) '
 map_symbol = true
-disabled = false
+disabled = true
 
 [time]
 disabled = false
