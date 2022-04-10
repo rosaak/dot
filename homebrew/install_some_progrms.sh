@@ -24,3 +24,4 @@ brew install lsd
 brew install mcfly
 
 brew install tree
+brew install ncdu
