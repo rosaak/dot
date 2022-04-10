@@ -73,6 +73,8 @@ alias em="emacs -nw"
 # monitoring
 alias htopr='htop -u $USER'
 
+# python3
+pystartenv="python3 -m venv env"
 
 # R env
 alias Rns='R --no-save --no-restore'
