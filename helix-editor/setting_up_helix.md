@@ -2,8 +2,8 @@
 
 ## Installation
 ```bash
-sudo dnf copr enable varlad/helix
-sudo dnf install helix
+brew tap helix-editor/helix
+brew install helix
 
 ```
 
