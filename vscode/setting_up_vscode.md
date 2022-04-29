@@ -47,7 +47,15 @@
         "markdown": false,
         "python": true
     },
-    "pieces.telemetry": false
+    "pieces.telemetry": false,
+    "vim.smartRelativeLine" : true,
+    "python.formatting.provider": "black",
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSace": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+      },
+    "window.zoomLevel": 1
 }
 
 ```
