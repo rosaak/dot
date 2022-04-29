@@ -28,6 +28,30 @@
 }
 ```
 
+- my example settings.json file
+
+```json
+{
+    "editor.fontFamily": "'Fira Code', 'Fire Code Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace",
+    "workbench.colorTheme": "Tokyo Night",
+    "terminal.integrated.inheritEnv": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "'Fira Code', 'MesloLGS NF', 'Fire Code Nerd Font Mono'",
+    "terminal.integrated.fontSize": 14,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "python": true
+    },
+    "pieces.telemetry": false
+}
+
+```
+
 ## Extensions
 - [Visual Studio Code Azure Extensions](https://code.visualstudio.com/docs/azure/extensions)
 
