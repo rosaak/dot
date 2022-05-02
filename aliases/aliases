@@ -55,6 +55,8 @@ alias runj="jupyter lab --no-browser "
 # iPython vi mode
 alias ipython='ipython --TerminalInteractiveShell.editing_mode=vi'
 
+# venv 
+alias sactivate='source env/bin/activate && which python3'
 
 # Softwares 
 # Typora
