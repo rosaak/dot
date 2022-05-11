@@ -16,9 +16,10 @@ keybase pgp gen --multi
 
 ```bash
 gpg --list-secret-keys --keyid-format LONG
-
 git config --global user.signingkey <paste_the_long_id>
 git config --global commit.gpgsign true
+
+
 ```
 
 - add the gpg key to github
@@ -27,6 +28,18 @@ open https://github.com/settings/keys
 keybase pgp export -q <paste_the_long_id> | pbcopy
 
 ```
+
+## My Thoughts
+- I had one gpg key before I install keybase version of gpg. That mess up the with git commits
+- started getting these errors
+```
+error: gpg failed to sign the data
+fatal: failed to write commit object
+```
+- So I purged keybase gpg 
+- and pulled down my original gpg key and removed keybase  public key from github 
+
+
 
 
 ## Reference
