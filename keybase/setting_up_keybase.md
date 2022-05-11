@@ -38,7 +38,7 @@ fatal: failed to write commit object
 ```
 - So I purged keybase gpg 
 - and pulled down my original gpg key and removed keybase  public key from github 
-
+- Finally installed gpgtools and added my origial gpg public key to it  
 
 
 
