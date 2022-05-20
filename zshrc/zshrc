@@ -117,11 +117,11 @@ fpath+=~/.zfunc
 # python env - pyenv
 # I installed the brew version and the command version of pyenv 
 # both of them have different methods for accessing pyenv to put it on path
-# alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
-# if command -v pyenv 1>/dev/null 2>&1; then
-#   eval "$(pyenv init -)"
-# fi
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init --path)"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
