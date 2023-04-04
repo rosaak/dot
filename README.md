@@ -14,7 +14,7 @@ status: draft
 
 - [Homebrew](homebrew/setting_up_homebrew.md)
 - [ZSH](zshrc/setting_up_zshell.md)
-  - [Oh My ZSH]("zshrc/setting_up_zshell.md#Theming with `Oh my zsh` - installation and configuring")
+  - [Oh My ZSH]("zshrc/setting_up_zshell.md#Theming")
 - [Powerlevel10k](/Users/rp/MyGits/dots/powerlevel10k/setting_up_powerlevel10k.md)
 - [Alises](/Users/rp/MyGits/dots/aliases/setting_up_aliases.md)
 
