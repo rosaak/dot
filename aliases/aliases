@@ -8,6 +8,7 @@ alias .3='cd ../../../'
 alias .4='cd ../../../../'
 alias ~='cd ~'
 alias -- -="cd -"
+alias pwdr='printf "%s/%s" "$PWD" "$1" ; echo'
 
 # navigating this machine
 alias dt="cd ~/Desktop"

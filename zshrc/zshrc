@@ -1,4 +1,5 @@
-
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # 
 # .______        ______        _______. __    __       ___      .__   __.
 # |   _  \      /  __  \      /       ||  |  |  |     /   \     |  \ |  |
@@ -51,7 +52,7 @@ COMPLETION_WAITING_DOTS="true"          # show red dot while waiting
 # DISABLE_UNTRACKED_FILES_DIRTY="true"  # for a faster status check for large repos
 # HIST_STAMPS="mm/dd/yyyy"              # history stamp 
 # ZSH_CUSTOM=/path/to/new-custom-folder # use another custom folder than $ZSH/custom?
-plugins=(git extract macos python tmux docker rsync vscode urltools bgnotify z iterm2 emoji autojump brew fzf)     # plugins 
+plugins=(git web-search extract macos python tmux docker rsync vscode urltools bgnotify z iterm2 emoji autojump brew fzf)     # plugins 
 
 
 # PREFERED EDITOR
@@ -70,6 +71,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # SOURCE
 # -------------------------------------------------------------------------
+source ~/.profile
 source ~/.aliases
 source $ZSH/oh-my-zsh.sh
 source ~/bin/imp_fns.sh
@@ -117,11 +119,24 @@ fpath+=~/.zfunc
 # python env - pyenv
 # I installed the brew version and the command version of pyenv 
 # both of them have different methods for accessing pyenv to put it on path
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+# alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+# if command -v pyenv 1>/dev/null 2>&1; then
+#  eval "$(pyenv init -)"
+# fi
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init --path)"
+
+export PATH="$HOME/.config/poetry/bin:$PATH"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+
+
+# Add gfortran for R
+# install it from here https://github.com/fxcoudert/gfortran-for-macOS/releases
+# trouble shooting : https://stackoverflow.com/questions/35999874/mac-os-x-r-error-ld-warning-directory-not-found-for-option
+# https://mac.r-project.org/tools/
+export PATH=$PATH:/usr/local/gfortran/bin

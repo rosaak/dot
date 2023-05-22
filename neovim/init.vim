@@ -63,5 +63,19 @@ let g:dashboard_custom_header = [
 map <silent> <C-n> :NERDTreeFocus<CR>
 
 
+" GUI for neovide
+let g:python_highlight_all = 1
 
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org 
+au BufEnter *.org            call org#SetOrgFileType()
+
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+set guifont=SauceCodePro\ Nerd\ Font:h15
+"set guifont=Mononoki\ Nerd\ Font:h15
+"set guifont=JetBrains\ Mono:h15
+let g:neovide_transparency=0.95
+let g:neovide_cursor_vfx_mode = "pixiedust"
 
