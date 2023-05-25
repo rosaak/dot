@@ -101,7 +101,8 @@ alias buou="brew update && brew outdated && brew upgrade && brew cleanup"
 # pinging google
 alias pingoo="ping www.google.com"
 
-
+# AI
+alias B="$HOME/go/bin/bard-cli -i"
 
 
 
