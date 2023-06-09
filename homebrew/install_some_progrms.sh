@@ -25,3 +25,6 @@ brew install mcfly
 
 brew install tree
 brew install ncdu
+
+brew install lazygit
+brew install lsd
