@@ -26,5 +26,9 @@ brew install mcfly
 brew install tree
 brew install ncdu
 
+<<<<<<< Updated upstream
 brew install lazygit
 brew install lsd
+=======
+brew install broot # https://dystroy.org/broot/
+>>>>>>> Stashed changes
