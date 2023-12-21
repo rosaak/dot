@@ -58,6 +58,7 @@ alias ipython='ipython --TerminalInteractiveShell.editing_mode=vi'
 
 # venv 
 alias sactivate='source env/bin/activate && which python3'
+alias vactivate='source venv/bin/activate && which python3'
 
 # Softwares 
 # Typora
@@ -103,7 +104,7 @@ alias pingoo="ping www.google.com"
 
 # AI
 alias B="$HOME/go/bin/bard-cli -i"
-
+alias tgpt="$HOME/go/bin/tgpt"
 
 
 
